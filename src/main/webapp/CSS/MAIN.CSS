@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&display=swap');
+
+/* Estilos y colores de Crepes & Waffles */
+:root {
+  /* Paleta de colores */
+  --primary-color: rgb(238, 214, 196);
+  --light-color: rgb(255, 240, 209);
+  --secondary-color: rgb(102, 67, 67);
+  --dark-color: rgb(59, 48, 48);
+  --light-cake-color: rgb(231, 179, 147);
+
+  /* Fuentes */
+  --primary-font: "Nunito Sans", sans-serif;
+  --secondary-font: "Oswald", sans-serif;
+}
+
+
+

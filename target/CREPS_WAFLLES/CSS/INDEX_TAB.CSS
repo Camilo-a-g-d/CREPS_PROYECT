@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+/* Estilo General */
+  
+  .tabs-container {
+    max-width: 100%;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navegación de Tabs */
+  .tabs-nav {
+    display: flex;
+    background: #3B3030;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tabs-nav li {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  .tabs-nav li:hover {
+    background: #575757;
+  }
+  
+  .tabs-nav .active {
+    background: #333;
+  }
+  
+  /* Contenido de Tabs */
+  .tab-content {
+    display: none;
+    padding: 2rem;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  /* Video */
+  .video-container {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-color: #000;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Estilo Responsivo */
+@media screen and (max-width: 768px) {
+    .tabs-nav li {
+      font-size: 0.875rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+      padding: 0.75rem;
+    }
+  
+    .tab-content {
+      padding: 1rem; /* Reduce los márgenes del contenido */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .tabs-container {
+      margin: 1rem; /* Reduce el margen en pantallas pequeñas */
+    }
+  
+    .tabs-nav {
+      flex-direction: column; /* Cambia a diseño vertical en pantallas muy pequeñas */
+    }
+  
+    .tabs-nav li {
+      text-align: left; /* Alinea el texto a la izquierda */
+      padding: 0.5rem 1rem;
+    }
+  }

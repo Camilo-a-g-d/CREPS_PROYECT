@@ -1,0 +1,39 @@
+.waffle-section-container {
+    display: flex;
+  }
+  
+  .waffle-section {
+    /* border: 1px solid #000; */
+    background-image: url("../img/IMGS_FOOTER/waffle-background-img-copia.jpg");
+    width: 85% !important;
+    margin: 15px auto;
+    border-radius: 5px;
+  }
+  
+  .table-waffle table {
+    font-family: var(--secondary-font);
+    width: 100%;
+    height: 65vh;
+  }
+  
+  .table-waffle table tr td {
+    width: 20% !important;
+  }
+  
+  .table-waffle table tr td div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5px;
+    width: 62% !important;
+    height: 18vh;
+    border-radius: 5px;
+    /* border: 1px solid #000; */
+    background-color: var(--light-cake-color);
+  }
+  
+  .table-waffle table tr td div span {
+    font-size: 18px;
+    text-align: center;
+  }

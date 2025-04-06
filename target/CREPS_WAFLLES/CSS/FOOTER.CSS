@@ -1,0 +1,94 @@
+/* ----- Estilos del footer ----- */
+.footer-section {
+    background-color: var(--secondary-color);
+    padding: 27px 45px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .red-social-box {
+    width: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "socialRedImg socialRedImg"
+                         "socialRedImg socialRedImg";
+  }
+  
+  .red-social-box a {
+    width: 57px;
+    text-decoration: none;
+    padding: 7px 10px;
+  }
+  
+  .red-social-box a img {
+    grid-area: socialRedImg;
+  }
+  
+  .links-box {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links-box ul li {
+    font-family: var(--secondary-font);
+    font-size: 19px;
+    margin: 12px auto;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .links-box ul li a {
+    color: var(--primary-color);
+  }
+  
+  .trend-box {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .trend-box ul li {
+    font-family: var(--secondary-font);
+    font-size: 19px;
+    margin: 25px auto;
+    list-style: none;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .trend-box ul li a img {
+    width: 140px;
+  }
+  
+  .b-logo-box {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .b-logo-box a img {
+    width: 70px;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .footer-section {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 15px 35px;
+      height: 100%;
+    }
+  
+    .footer-section div {
+      margin: 15px auto;
+    }
+  
+    .trend-box {
+      width: 90%;
+    }
+  }
