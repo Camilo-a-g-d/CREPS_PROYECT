@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crepes & Waffles - Registrarse</title>
+    <link rel="stylesheet" href="./../../CSS/style.css">
+    <link rel="icon" href="logo.jfif" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="logo-area">
+                <img src="logo.jfif" alt="Crepes & Waffles Logo" class="logo">
+                <h1>Estas a un paso de ser un usuario Creps & Waffles</h1>
+            </div>
+
+            <form id="register-form" class="auth-form active">
+                <h2>Crear Cuenta</h2>
+                <div class="input-group">
+                    <label for="register-first-name">Nombre</label>
+                    <input type="text" id="register-first-name" placeholder="Juan" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-last-name">Apellido</label>
+                    <input type="text" id="register-last-name" placeholder="Pérez" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-email">Correo Electrónico</label>
+                    <input type="email" id="register-email" placeholder="tu@ejemplo.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-password">Contraseña</label>
+                    <input type="password" id="register-password" placeholder="Mín. 8 caracteres" required>
+                </div>
+                <div class="input-group">
+                    <label for="register-confirm-password">Confirmar Contraseña</label>
+                    <input type="password" id="register-confirm-password" placeholder="Repite tu contraseña" required>
+                </div>
+                
+                <div class="checkbox-group">
+                    <input type="checkbox" id="data-authorization" required>
+                    <label for="data-authorization">
+                        Autorizo el tratamiento de mis datos personales. 
+                        <a href="#" id="show-data-terms" class="link-terms">Ver términos</a>
+                    </label>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="email-updates">
+                    <label for="email-updates">
+                        Deseo recibir correos con actualizaciones y promociones.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">Registrarme</button>
+                <div class="message" id="register-message"></div>
+            </form>
+
+            <div class="switch-form-link">
+                ¿Ya tienes cuenta? <a href="login.html">Inicia Sesión aquí</a>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-body"></div>
+            <button class="btn-primary modal-accept-btn">Aceptar</button>
+        </div>
+    </div>
+
+    <script src="./../../JS/main.js"></script>
+</body>
+</html>

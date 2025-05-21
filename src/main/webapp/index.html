@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creps & Waffles</title>
     <!-- CSS -->
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/waffle_section.css">
-  <link rel="stylesheet" href="./css/footer.css"> 
+  <link rel="stylesheet" href="CSS/MAIN.CSS">
+  <link rel="stylesheet" href="CSS/WAFFLE_SECTION.CSS">
+  <link rel="stylesheet" href="CSS/FOOTER.CSS"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="CSS/INDEX_MENU.CSS">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,11 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/INDEX_SLIDER.CSS">
-    <link rel="shortcut icon" href="/IMG/IMGS_HEADER/01_C&W_Logo_Moneda_Ag_2020.png" type="image/x-icon">
+    <link rel="shortcut icon" href="IMG/IMGS_HEADER/01_C&W_Logo_Moneda_Ag_2020.png" type="image/x-icon" width="100%">
     <link rel="stylesheet" href="CSS/INDEX_TAB.CSS">
     <link rel="shortcut icon" href="/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="CSS/INDEX_MAIN.css">
-</head>
+
 <body>
     <header class="header">
         <nav class="nav container">
@@ -183,7 +183,7 @@
               <!-- Video -->
               <div class="video-container">
                 <video controls>
-                  <source src="VIDEO/VIDEO_HEADER/Crepes & Waffles.mp4" type="video/mp4">
+                  <source src="VIDEO/VIDEO_HEADER/Crepes & Waffles.mp4" type="VIDEO/mp4">
                   Tu navegador no soporta el elemento de video.
                 </video>
               </div>
@@ -192,210 +192,249 @@
      </header>
 
     <main class="main">
-        <!-- Waffle section -->
-        <div class="waffle-section-container">
-          <div class="waffle-section">
-            <div class="table-waffle">
-              <table>
-                <tr>
-                  <td>
-                    <div>
-                      <span>Postres con sabores según a petición del cliente</span>
-                    </div>
-                  </td>
-                  <td>
-                    <div>
-                      <span>Crepes con sabores ácidos</span>
-                    </div>
-                  </td>
-                  <td>
-                    <!-- <div>
-                      <span>ITEM</span>
-                    </div> -->
-                  </td>
-                  <td>
-                    <div>
-                      <span>Que se adapte ante cualquier necesidad</span>
-                    </div>
-                  </td>
-                  <td>
-                    <!-- <div>
-                      <span>ITEM</span>
-                    </div> -->
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <!-- <div>
-                      <span>ITEM</span>
-                    </div> -->
-                  </td>
-                  <td>
-                    <div>
-                      <span>Implementar calificaciones en plataforma</span>
-                    </div>
-                  </td>
-                  <td>
-                    <div>
-                      <span>Que sea un sitio comodo para todos</span>
-                    </div>
-                  </td>
-                  <td>
-                    <!-- <div>
-                      <span>ITEM</span>
-                    </div> -->
-                  </td>
-                  <td>
-                    <div>
-                      <span>Precios económicos</span>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
+        <!-- Ingresar -->
+        <section class="cta-login">
+        <div class="cta-content">
+          <h2>¿Ya tienes una cuenta?</h2>
+          <p>Ingresa a nuestro inicio de sesión y disfruta de una experiencia personalizada.</p>
+          <a href="PAGES/PAGES_LOGIN/login.html" class="cta-button">Ir a Iniciar Sesión</a>
         </div>
-        <!-- End Waffle section -->
+        </section>
 
-        <main>
-          <section id="bonos-regalo" class="bonos-regalo-section">
-              <div class="bonos-content">
-                  <h1>Bonos de regalos</h1>
-                  <p class="alianza-text">Alianza Exclusiva</p>
-                  <img class="redeban-logo" src="IMG/IMGS_MAIN/Captura_de_pantalla_2024-11-18_142052-removebg-preview.png" alt="Redeban Logo" >
-              </div>
-          </section>
-  
-      <section class="cards-container">
-          <!-- Tarjeta 1 -->
-          <div class="card" id="card1">
-              <div class="circle-image">
-                  <img src="IMG/IMGS_MAIN/heladom3.jpeg" alt="Helado" width="50px">
-              </div>
-              <h3>$30,000</h3>
-              <p>¡Haz este regalo especial!</p>
-              <button class="comprar" onclick="showCustomizationScreen(1)">Comprar</button>
-          </div>
-          <!-- Tarjeta 2 -->
-          <div class="card" id="card2">
-              <div class="circle-image">
-                  <img src="IMG/IMGS_MAIN/heladom2.jpeg" alt="Helado">
-              </div>
-              <h3>$50,000</h3>
-              <p>¡Haz este regalo especial!</p>
-              <button class="comprar" onclick="showCustomizationScreen(2)">Comprar</button>
-          </div>
-          <!-- Tarjeta 3 -->
-          <div class="card" id="card3">
-              <div class="circle-image">
-                  <img src="IMG/IMGS_MAIN/heladom3.jpeg" alt="Helado">
-              </div>
-              <h3>$100,000</h3>
-              <p>¡Haz este regalo especial!</p>
-              <button class="comprar" onclick="showCustomizationScreen(3)">Comprar</button>
-          </div>
-      </section>
-      
-      <!-- Pantalla de Selección de Frutas -->
-        <!-- Pantalla de Selección de Frutas -->
-    <section id="fruit-selection-screen" style="display: none;">
-      <div class="card-large">
-          <h2>Personaliza tu tarjeta</h2>
-          <div class="customization-container">
-              <!-- Opciones de frutas a la izquierda -->
-              <div class="fruits-grid">
-                  <img class="fruit" data-fruit="mango" src="IMG/IMGS_MAIN/mango.jpg" alt="mango">
-                  <img class="fruit" data-fruit="fresa" src="IMG/IMGS_MAIN/fresas.jpg" alt="Fresa">
-                  <img class="fruit" data-fruit="uva" src="IMG/IMGS_MAIN/uva.jpeg" alt="Uva">
-                  <img class="fruit" data-fruit="pera" src="IMG/IMGS_MAIN/pera.jpeg" alt="Pera">
-                  <img class="fruit" data-fruit="kiwi" src="IMG/IMGS_MAIN/kiwi.jpeg" alt="kiwi">
-                  <img class="fruit" data-fruit="manzana" src="IMG/IMGS_MAIN/manzna.jpeg" alt="manzana">
-              </div>
-              <!-- Vista previa a la derecha -->
-              <div class="card-preview">
-                  <h3>Vista previa de tu tarjeta</h3>
-                  <img id="card-background" src="IMG/IMGS_MAIN/imagen previa.png" alt="Tarjeta personalizada">
-              </div>
-          </div>
-          <!-- Formulario debajo de ambas -->
-          <div class="card-preview">
-              <h3><i class="fas fa-gift"></i> Completa los detalles de tu compra</h3>
-              <form id="purchaseDetails">
-                  <div class="form-group">
-                      <label for="from"><i class="fas fa-user"></i> De:</label>
-                      <input type="text" id="from" placeholder="Tu nombre" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="to"><i class="fas fa-user-friends"></i> Para:</label>
-                      <input type="text" id="to" placeholder="Nombre del destinatario" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="email"><i class="fas fa-envelope"></i> Email:</label>
-                      <input type="email" id="email" placeholder="Correo electrónico del destinatario" required>
-                  </div>
-                  <div class="form-group">
-                      <label for="message"><i class="fas fa-comment"></i> Mensaje:</label>
-                      <textarea id="message" placeholder="Escribe tu mensaje" required></textarea>
-                  </div>
-                  <button type="submit" id="purchaseButton" class="update-button"><i class="fas fa-check-circle"></i> Finalizar Compra</button>
-              </form>
-          </div>
+        <!-- Tarjetas -->
+        <div class="cards-container_info">
+    <h1 class="explorer-title">
+      Explora nuestras tarjetas informativas - Pasa el cursor sobre las tarjetas para ver más información.
+    </h1>
+
+    <section class="card_info">
+      <img src="IMG/IMGS_MAIN/cupkake.png" alt="Postre personalizado">
+      <div class="card__content">
+        <p class="card__title">Postres a tu Gusto</p>
+        <p class="card__description">
+          Elige los sabores y combinaciones que más te gusten. Creamos tu postre como lo imaginas.
+        </p>
       </div>
-      <button id="more-options" onclick="showCustomizationScreen()">Más opciones</button>
-      <p id="successMessage" style="display:none;">¡Has generado tu compra exitosamente!</p>
-  </section>
+    </section>
+
+    <section class="card_info">
+      <img src="IMG/IMGS_MAIN/crepacid.png" alt="Crepe ácido">
+      <div class="card__content">
+        <p class="card__title">Crepes Ácidos</p>
+        <p class="card__description">
+          Una explosión de sabor con frutas cítricas y toques refrescantes. Ideal para los que aman lo ácido.
+        </p>
+      </div>
+    </section>
+
+    <section class="card_info">
+      <img src="IMG/IMGS_MAIN/necesidad.png" alt="Opciones adaptables">
+      <div class="card__content">
+        <p class="card__title">Que se adapte ante cualquier necesidad</p>
+        <p class="card__description">
+          Una opción fresca que se adapta a tu gusto y ocasión.
+        </p>
+      </div>
+    </section>
+
+    <section class="card_info">
+      <img src="IMG/IMGS_MAIN/califica.png" alt="Califica tu experiencia">
+      <div class="card__content">
+        <p class="card__title">Califica tu Experiencia</p>
+        <p class="card__description">
+          Deja tu opinión y ayúdanos a mejorar. Tu calificación hace la diferencia para todos.
+        </p>
+      </div>
+    </section>
+    
+    <section class="card_info">
+      <img src="IMG/IMGS_MAIN/comididad.png" alt="Helado" width="100%" height="100%">
+          <div class="card__content">
+            <p class="card__title">Espacio Cómodo para Todos</p>
+            <p class="card__description">
+              Tu opinión nos ayuda a construir una plataforma más amigable, segura y pensada para ti.
+            </p>
+      </div>
+    </section>
+            
+    <section class="card_info">
+      <img src="IMG/IMGS_MAIN/dinero.png" alt="Helado" width="100%" height="100%">
+          <div class="card__content">
+            <p class="card__title">Precios que se Ajustan a Ti</p>
+            <p class="card__description">
+              Disfruta calidad sin pagar de más. Opciones deliciosas y accesibles para todos los bolsillos.
+            </p>
+      </div>
+    </section>
+            
+     <section class="card_info">
+      <img src="IMG/IMGS_MAIN/promociones.png" alt="Helado" width="100%" height="100%">
+          <div class="card__content">
+            <p class="card__title">Promociones Especiales</p>
+            <p class="card__description">
+              Aprovecha combos y descuentos por tiempo limitado. ¡Sabores únicos a precios aún mejores!
+            </p>
+      </div>
+    </section>
+            
+    <section class="card_info">
+      <img src="IMG/IMGS_MAIN/calidad.png" alt="Helado" width="100%" height="100%">
+          <div class="card__content">
+            <p class="card__title">Calidad Garantizada</p>
+            <p class="card__description">
+              Ingredientes frescos y preparaciones cuidadosas. Porque lo económico también puede ser delicioso.
+            </p>
+      </div>
+    </section>
+  </div>
+   
+        <!-- End Waffle section -->
+          <section id="bonos-regalo" class="bonos-regalo-section">
+            <div class="bonos-overlay">
+              <div class="bonos-content">
+                <h1>Bonos de Regalo</h1>
+                <p class="alianza-text">Alianza Exclusiva</p>
+                <img class="redeban-logo" src="IMG/IMGS_MAIN/Captura_de_pantalla_2024-11-18_142052-removebg-preview.png" alt="Logo Redeban">
+              </div>
+            </div>
+          </section>
+
+  
+      <!-- Sección informativa sobre el funcionamiento -->
+<section class="section-info">
+  <div class="info-container">
+    <h2>Personaliza tu regalo</h2>
+    <p>Selecciona el valor de la tarjeta, personalízala con frutas y completa los datos. ¡Haz un regalo único y especial!</p>
+  </div>
+</section>
+
+<!-- Sección Tarjetas de Regalo -->
+<section class="cards-container-refined">
+  <div class="gift-card">
+    <div class="circle-image">
+      <img src="IMG/IMGS_MAIN/heladom3.jpeg" alt="Helado $30.000">
+    </div>
+    <h3>$30.000</h3>
+    <p>Haz este regalo especial</p>
+    <button class="cta-button comprar">Comprar</button>
+  </div>
+
+  <div class="gift-card">
+    <div class="circle-image">
+      <img src="IMG/IMGS_MAIN/heladom2.jpeg" alt="Helado $50.000">
+    </div>
+    <h3>$50.000</h3>
+    <p>Haz este regalo especial</p>
+    <button class="cta-button comprar">Comprar</button>
+  </div>
+
+  <div class="gift-card">
+    <div class="circle-image">
+      <img src="IMG/IMGS_MAIN/heladom3.jpeg" alt="Helado $100.000">
+    </div>
+    <h3>$100.000</h3>
+    <p>Haz este regalo especial</p>
+    <button class="cta-button comprar">Comprar</button>
+  </div>
+</section>
+
+<!-- Pantalla de Personalización -->
+<section id="fruit-selection-screen" style="display: none;">
+  <div class="card-large">
+    <h2>Personaliza tu tarjeta</h2>
+
+    <div class="customization-container">
+      <div class="fruits-grid">
+        <img class="fruit" data-fruit="mango" src="IMG/IMGS_MAIN/mango.jpg" alt="Mango">
+        <img class="fruit" data-fruit="fresa" src="IMG/IMGS_MAIN/fresas.jpg" alt="Fresa">
+        <img class="fruit" data-fruit="uva" src="IMG/IMGS_MAIN/uva.jpeg" alt="Uva">
+        <img class="fruit" data-fruit="pera" src="IMG/IMGS_MAIN/pera.jpeg" alt="Pera">
+        <img class="fruit" data-fruit="kiwi" src="IMG/IMGS_MAIN/kiwi.jpeg" alt="Kiwi">
+        <img class="fruit" data-fruit="manzana" src="IMG/IMGS_MAIN/manzna.jpeg" alt="Manzana">
+      </div>
+
+      <div class="card-preview">
+        <h3>Vista previa</h3>
+        <img id="card-background" src="IMG/IMGS_MAIN/imagen previa.png" alt="Vista previa de tarjeta">
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h3>Completa los detalles</h3>
+      <form id="purchaseDetails">
+        <div class="form-group">
+          <label for="from">De:</label>
+          <input type="text" id="from" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="to">Para:</label>
+          <input type="text" id="to" placeholder="Nombre del destinatario" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo:</label>
+          <input type="email" id="email" placeholder="Correo electrónico del destinatario" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+        </div>
+        <button type="submit" class="cta-button full">Finalizar Compra</button>
+      </form>
+    </div>
+    <button id="more-options" class="cta-button">Más opciones</button>
+    <p id="successMessage" style="display:none;">¡Has generado tu compra exitosamente!</p>
+  </div>
+</section>
       </main>
          <!-- Footer section -->
-  <footer class="footer-section">
-    <!-- Redes sociales -->
-    <div class="red-social-box">
-      <a class="img-box" href="https://www.facebook.com/CrepesyWafflesOficial" target="_blank">
-        <img src="./img/IMGS_FOOTER/Facebook C&W.svg" alt="Facebook C&W">
-      </a>
-      <a class="img-box" href="https://www.instagram.com/crepesywaffles/?hl=es-la" target="_blank">
-        <img src="./img/IMGS_FOOTER//Instatgram C&W.svg" alt="Instagram C&W">
-      </a>
-      <a class="img-box" href="https://www.linkedin.com/company/crepes-y-waffles" target="_blank">
-        <img src="./img/IMGS_FOOTER//LinkedIn C&W.svg" alt="LinkedIn C&W">
-      </a>
-      <a class="img-box" href="https://x.com/CrepesWafflesCo" target="_blank">
-        <img src="./img/IMGS_FOOTER//X C&W.svg" alt="X C&W">
-      </a>
+<footer class="footer-section">
+  <div class="footer-content">
+    <!-- Red social -->
+    <div class="footer-column social">
+      <h4>Síguenos</h4>
+      <div class="redes">
+        <a href="https://www.facebook.com/CrepesyWafflesOficial" target="_blank">
+          <img src="IMG/IMGS_FOOTER/Facebook C&W.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/crepesywaffles" target="_blank">
+          <img src="IMG/IMGS_FOOTER/Instatgram C&W.svg" alt="Instagram">
+        </a>
+        <a href="https://www.linkedin.com/company/crepes-y-waffles" target="_blank">
+          <img src="IMG/IMGS_FOOTER/LinkedIn C&W.svg" alt="LinkedIn">
+        </a>
+        <a href="https://x.com/CrepesWafflesCo" target="_blank">
+          <img src="IMG/IMGS_FOOTER/X C&W.svg" alt="X">
+        </a>
+      </div>
     </div>
-    <!-- End Redes sociales -->
 
-    <!-- Links -->
-    <div class="links-box">
+    <!-- Enlaces útiles -->
+    <div class="footer-column links">
+      <h4>Enlaces</h4>
       <ul>
-        <li><a href="#" target="_blank">Contactanos</a></li> 
-        .
+        <li><a href="#">Contáctanos</a></li>
         <li><a href="https://domicilios.crepesywaffles.com/ubicaciones/" target="_blank">Ubicaciones</a></li>
-        <li><a href="#" target="_blank">Comunidad</a></li>
+        <li><a href="#">Comunidad</a></li>
       </ul>
     </div>
-    <!-- End Links -->
 
-    <!-- Marca y otros -->
-    <div class="trend-box">
-      <ul>
-        <li>&copy; 2025 CREPES & WAFFLES</li>
-        <li>
-          <a href="www.anthropologic.co" target="_blank">
-            <img src="./img/IMGS_FOOTER//Logo_anthropologic.png" alt="Logo de anthropologic">
-          </a>
-        </li>
-      </ul>
+    <!-- Marca -->
+    <div class="footer-column marca">
+      <p>&copy; 2025 CREPES & WAFFLES</p>
+      <a href="https://www.anthropologic.co" target="_blank">
+        <img src="IMG/IMGS_FOOTER/Logo_anthropologic.png" alt="Anthropologic">
+      </a>
     </div>
-    <!-- End Marca y otros -->
 
     <!-- Empresas B -->
-    <div class="b-logo-box">
-      <a class="img-box" href="https://www.sistemab.org/" target="_blank">
-        <img src="./img/IMGS_FOOTER/Logo_Empresas_B.png" alt="Logo Empresas B">
+    <div class="footer-column bcorp">
+      <a href="https://www.sistemab.org/" target="_blank">
+        <img src="IMG/IMGS_FOOTER/Logo_Empresas_B.png" alt="Empresa B">
       </a>
     </div>
-    <!-- End Empresas B -->
-    </footer>
+  </div>
+</footer>
+
     <script src="JS/Header.js"></script>
     <script src="JS/intracciones.js"></script>
 </body>

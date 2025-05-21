@@ -1,94 +1,89 @@
-/* ----- Estilos del footer ----- */
 .footer-section {
-    background-color: var(--secondary-color);
-    padding: 27px 45px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .red-social-box {
-    width: 15%;
-    display: grid;
-    justify-content: center;
+  background-color: #3B3030;
+  padding: 40px 20px;
+  color: #FFF0D1;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #FFF0D1;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin: 10px 0;
+}
+
+.footer-column ul li a {
+  color: #FFF0D1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #E0C3A0;
+}
+
+.redes a {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.redes img {
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.redes img:hover {
+  transform: scale(1.1);
+}
+
+.footer-column.marca p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.footer-column.marca img {
+  width: 130px;
+}
+
+.footer-column.bcorp img {
+  width: 80px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
     align-items: center;
-    grid-template-areas: "socialRedImg socialRedImg"
-                         "socialRedImg socialRedImg";
   }
-  
-  .red-social-box a {
-    width: 57px;
-    text-decoration: none;
-    padding: 7px 10px;
+
+  .footer-column {
+    margin-bottom: 30px;
   }
-  
-  .red-social-box a img {
-    grid-area: socialRedImg;
-  }
-  
-  .links-box {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .links-box ul li {
-    font-family: var(--secondary-font);
-    font-size: 19px;
-    margin: 12px auto;
-    list-style: none;
-    text-align: center;
-  }
-  
-  .links-box ul li a {
-    color: var(--primary-color);
-  }
-  
-  .trend-box {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .trend-box ul li {
-    font-family: var(--secondary-font);
-    font-size: 19px;
-    margin: 25px auto;
-    list-style: none;
-    text-align: center;
-    color: var(--primary-color);
-  }
-  
-  .trend-box ul li a img {
-    width: 140px;
-  }
-  
-  .b-logo-box {
-    width: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .b-logo-box a img {
-    width: 70px;
-  }
-  
-  @media screen and (max-width: 750px) {
-    .footer-section {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: center;
-      padding: 15px 35px;
-      height: 100%;
-    }
-  
-    .footer-section div {
-      margin: 15px auto;
-    }
-  
-    .trend-box {
-      width: 90%;
-    }
-  }
+}
